@@ -1,0 +1,24 @@
+{
+  "name": "flowlink",
+  "version": "1.0.0",
+  "description": "Optimize logistics and strengthen customer connections",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SebClav/flowLink.git"
+  },
+  "keywords": [
+    "ligistic",
+    "customer",
+    "relationship"
+  ],
+  "author": "Gabriel Sebastian Clavijo Alessandri",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SebClav/flowLink/issues"
+  },
+  "homepage": "https://github.com/SebClav/flowLink#readme"
+}
