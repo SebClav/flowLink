@@ -1,8 +1,8 @@
 import { createTheme } from '@mui/material/styles';
 
-export const flowLinkTheme = createTheme({
+const flowLinkTheme = createTheme({
   palette: {
-    mode: 'dark',
+    mode: 'light',
     primary: {
       main: '#004f9e',
     },
@@ -17,3 +17,5 @@ export const flowLinkTheme = createTheme({
     },
   },
 });
+
+export default flowLinkTheme;
