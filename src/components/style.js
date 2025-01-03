@@ -14,6 +14,7 @@ const flowLinkTheme = createTheme({
     },
     success: {
       main: '#00c853',
+      contrastText: '#fff',
     },
   },
 });
