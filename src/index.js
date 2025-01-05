@@ -8,6 +8,8 @@ import '@fontsource/roboto/700.css';
 
 import flowLinkTheme from './components/theme.js';
 
+import { BrowserRouter } from 'react-router-dom';
+
 import './index.css';
 import {CssBaseline, ThemeProvider } from '@mui/material';
 import App from './App';
@@ -16,9 +18,11 @@ import reportWebVitals from './reportWebVitals';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <CssBaseline />
     <ThemeProvider theme={flowLinkTheme}>
-    <App />
+      <BrowserRouter>
+        <CssBaseline />
+        <App />
+      </BrowserRouter>
     </ThemeProvider>
   </React.StrictMode>
 );
