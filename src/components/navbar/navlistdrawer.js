@@ -1,5 +1,6 @@
 import { Box, Divider, List, ListItem, ListItemButton, ListItemIcon, ListItemText } from "@mui/material";
-import { Person,  Category, Storefront, Route, LocalShipping, ShoppingCart } from "@mui/icons-material";
+import { Person,  Category, Storefront, Route, LocalShipping, ShoppingCart, Home } from "@mui/icons-material";
+
 
 export default function NavListDrawer() {
     return(
@@ -24,7 +25,16 @@ export default function NavListDrawer() {
                 <List>
                     <ListItem disablePadding>
                        
-                        <ListItemButton component="a" href="#trash">
+                       <ListItemButton component="a" href="/">
+                           <ListItemIcon >
+                               <Home/>
+                           </ListItemIcon>
+                           <ListItemText primary="Inicio"></ListItemText>
+                       </ListItemButton>
+                   </ListItem>
+                    <ListItem disablePadding>
+                       
+                        <ListItemButton component="a" href="/product">
                             <ListItemIcon >
                                 <Category/>
                             </ListItemIcon>
@@ -33,7 +43,7 @@ export default function NavListDrawer() {
                     </ListItem>
                     <ListItem disablePadding>
                         
-                        <ListItemButton component="a" href="#spam">
+                        <ListItemButton component="a" href="/client">
                             <ListItemIcon >
                                 <Storefront/>
                             </ListItemIcon>
@@ -42,7 +52,7 @@ export default function NavListDrawer() {
                     </ListItem>
                     <ListItem disablePadding>
                        
-                        <ListItemButton component="a" href="#spam">
+                        <ListItemButton component="a" href="/route">
                             <ListItemIcon >
                                 <Route/>
                             </ListItemIcon>
@@ -51,7 +61,7 @@ export default function NavListDrawer() {
                     </ListItem>
                     <ListItem disablePadding>
                         
-                        <ListItemButton component="a" href="#spam">    
+                        <ListItemButton component="a" href="/truck">    
                             <ListItemIcon >
                                 <LocalShipping/>
                             </ListItemIcon>
@@ -59,7 +69,7 @@ export default function NavListDrawer() {
                         </ListItemButton>                 
                     </ListItem>
                     <ListItem disablePadding>                    
-                        <ListItemButton component="a" href="#spam">
+                        <ListItemButton component="a" href="/order">
                             <ListItemIcon >
                                 <ShoppingCart/>
                             </ListItemIcon>
