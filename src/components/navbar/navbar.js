@@ -9,7 +9,7 @@ export default function Navbar() {
 
     return(
         <>
-            <AppBar position="fixed" >
+            <AppBar position="static" >
               <Toolbar>
                 <IconButton color="inherit" size="large" aria-label="Open Menu" onClick={() => setOpen(true)}>
                   <Menu/>
